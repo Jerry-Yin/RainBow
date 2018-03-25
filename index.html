@@ -13,8 +13,16 @@
     <!--@import "";-->
     <!--</style>-->
     <link rel="stylesheet" type="text/css" href="css/home.css">
+    <!--banner-->
     <script src="js/home_banner.js"></script>
+    <script src="js/homePage.js"></script>
+    <!--Dialog-->
+    <script src="lib/js/jquery-1.8.3.min.js"></script>
+    <script src="lib/js/jquery.iDialog.js" dialog-theme="default"></script>
+
 </head>
+
+
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
 
 <nav id="navigate" class="navbar navbar-inverse navbar-fixed-top">
@@ -53,7 +61,7 @@
                 </ul>
             </div>
         </div>
-        <img id="follow" src="src/image/img_follow_us.png">
+        <img id="follow" src="src/image/img_follow_us.png" style="cursor: pointer;" onclick="scanCode()">
     </div>
 </nav>
 
@@ -67,10 +75,11 @@
     <!--</ul>-->
     <!--</p>-->
 
-    <div class="div_banner" onmouseover="bannerOver()" onmouseout="bannerOut()">
+    <img class="div_banner" onmouseover="bannerOver()" onmouseout="bannerOut()">
         <button class="btn_shift" name="btn_shift" id="btn_shift1" onclick="clickPrev()">&lt;</button>
-        <img class="img_banner" id="banner" src="src/image/img_banner1.png"/>
+        <img class="img_banner" id="banner" src="src/image/img_banner1.png">
         <button class="btn_shift" name="btn_shift" id="btn_shift2" onclick="clickNext()">&gt;</button>
+    <!--<img class="img_join" src="src/image/img_join.png">-->
     </div>
 
 </div>
@@ -103,6 +112,16 @@
     <img src="src/image/img_home_foot.png">
 </div>
 
-
 </body>
+
+
+<!--<script type="text/javascript">-->
+    <!--$('#follow').click(function(){-->
+        <!--console.log('follow clicked')-->
+        <!--$.dialog({-->
+            <!--title:false,-->
+            <!--content:'<img src="src/image/img_scan_code.png">'-->
+        <!--});-->
+    <!--});-->
+<!--</script>-->
 </html>

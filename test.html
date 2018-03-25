@@ -1,0 +1,20 @@
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>div重叠 叠加实例 排层叠顺序 www.divcss5.com</title>
+    <style>
+        .div-relative{position:relative;color:#000;border:1px solid #000;width:500px;height:400px}
+        .div-a{ position:absolute;z-index:100;background:#F00;width:50px;height:50px; margin-left: 450px}
+        /* div背景色为红色 */
+        .div-b{ position:absolute;z-index:80;background:#FF0;width:500px;height:400px}
+        /* 背景为黄色 */
+    </style>
+</head>
+<body>
+<div class="div-relative">
+    <div class="div-a">我背景为红色</div>
+    <div class="div-b">我背景为黄色</div>
+</div>
+</body>
+</html> 
