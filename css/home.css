@@ -277,10 +277,12 @@ a:active {
     padding-top: 25%;
 }
 
-/*.img_join{*/
-    /*width: 40px;*/
-    /*height: 10px;*/
-/*}*/
+.img_join{
+    width: 10% !important;
+    top:80% !important;
+    left:25%;
+    cursor: pointer;
+}
 
 /*Dialog*/
 /*dialog parent div*/

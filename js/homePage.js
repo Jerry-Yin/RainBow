@@ -1,7 +1,7 @@
 
 
 function scanCode() {
-    console.log('follow clicked1')
+    console.log('follow clicked1');
     iDialog({
         title:false,
         id:'scanCode',
@@ -22,7 +22,7 @@ function scanCode() {
 }
 
 function dismissDialog() {
-     console.log('dismiss dialog')
+     console.log('dismiss dialog');
     // console.log($.dialog.get('scanCode'))
     // $.dismissdialog.get('scanCode')
     // Ω iDialog.get('scanCode').hide()
@@ -40,4 +40,33 @@ function dismissDialog() {
 
     // iDialog.hide();
     // window.dialog.hide();
+}
+
+function showJoinDialog() {
+    console.log('follow clicked1');
+    iDialog({
+        title:false,
+        id:'join',
+        // content:'<img src="src/image/img_scan_code.png">',
+        content:
+        '<div class="dialog_div">' +
+        '<img class="dialog_s1" src="src/image/img_join_dialog.png">' +
+        '<img class="dialog_s2" id="btn_dismiss1" src="src/image/img_close_black.png" onclick="dismissJoinDialog()"></img>' +
+        '</div>',
+        lock: true,
+        width:500,
+        fixed: true,
+        height:300,
+        esc: true,
+        opacity:0.4,
+        drag: true
+    });
+}
+
+function dismissJoinDialog() {
+    $.dialog({
+        id:'join',
+        title: false
+        // content:'<img src="src/image/img_scan_code.png">'
+    }).hide();
 }
