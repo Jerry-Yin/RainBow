@@ -13,6 +13,7 @@
     <!--@import "";-->
     <!--</style>-->
     <link rel="stylesheet" type="text/css" href="css/home.css">
+    <script src="js/home_banner.js"></script>
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
 
@@ -59,7 +60,20 @@
 
 <!--首页-->
 <div id="section1" class="container-fluid">
-    <img src="src/image/img_home.png"></img>
+    <!--<img src="src/image/img_banner1.png"></img>-->
+    <!--<p class="banner_p">-->
+    <!--<ul>-->
+    <!--<li><img src="src/image/img_banner1.png" alt=""/></li>-->
+    <!--<li><img src="src/image/img_banner2.png" alt=""/></li>-->
+    <!--</ul>-->
+    <!--</p>-->
+
+    <div class="div_banner" onmouseover="bannerOver()" onmouseout="bannerOut()">
+        <button class="btn_shift" name="btn_shift" id="btn_shift1" onclick="clickPrev()">&lt;</button>
+        <img class="img_banner" id="banner" src="src/image/img_banner1.png"/>
+        <button class="btn_shift" name="btn_shift" id="btn_shift2" onclick="clickNext()">&gt;</button>
+    </div>
+
 </div>
 <!--关于我们-->
 <div id="section2" class="container-fluid">
@@ -89,6 +103,7 @@
 <div id="section9" class="container-fluid">
     <img src="src/image/img_home_foot.png">
 </div>
+
 
 </body>
 </html>

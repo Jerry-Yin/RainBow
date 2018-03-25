@@ -118,12 +118,71 @@ a:active {
     top: 0;;
 }
 
+/*banner*/
+.div_banner {
+    width: 100%;
+    height: auto;
+    padding: 0;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.btn_shift {
+    width: 60px;
+    height: 60px;
+    margin: 0;
+    padding: 0;
+    border: none;
+    display: inline-block;
+    text-align: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 35px;
+    visibility: hidden;
+    background-color: rgba(245, 207, 31, 0.48);
+    opacity: 0.7;
+    -webkit-transition-duration: 0.5s;
+    /* Safari */
+    transition-duration: 0.5s;
+    cursor: pointer;
+    z-index: 8999;
+}
+
+#btn_shift1 {
+    position:absolute;
+    left:100px;
+}
+
+#btn_shift2 {
+    position:absolute;
+    right:100px;
+}
+
+.btn_shift:hover {
+    background-color: #efefef;
+    opacity: 0.7;
+}
+
+.img_banner {
+    width: 100%;
+    flex: 1;
+    cursor: pointer;
+
+    position: absolute;
+    top: 0;;
+}
+
+
+
 /*首页*/
 #section1 {
     /*padding-top: 50px;*/
     /*width: 100%;*/
     /*!*height: 500px;*!*/
-    /*background: url(../src/image/img_home.png) no-repeat center center;*/
+    /*background: url(../src/image/img_banner1.png) no-repeat center center;*/
     /*background-size: cover;*/
 
     padding-top: 20%;
