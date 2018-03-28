@@ -61,6 +61,7 @@ function startBanner() {
  * 鼠标悬停banner
  */
 function bannerOver() {
+    console.log("over")
     var btn = document.getElementsByName('btn_shift');
     for (var i = 0; i < btn.length; i++) {
         btn[i].style = 'visibility:visible;';
@@ -71,6 +72,7 @@ function bannerOver() {
  * 鼠标移出banner
  */
 function bannerOut() {
+    console.log("out")
     var btn = document.getElementsByName('btn_shift');
     for (var i = 0; i < btn.length; i++) {
         btn[i].style = 'visibility:hidden;';

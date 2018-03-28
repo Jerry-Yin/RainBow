@@ -191,6 +191,11 @@ a:active {
     padding-bottom: 20%;
 }
 
+/*.div_banner:hover ~ .btn_shift{*/
+    /*visibility: visible;*/
+
+/*}*/
+
 /*关于我们*/
 #section2 {
     /*padding-top: 50px;*/
@@ -286,7 +291,7 @@ a:active {
 
 /*Dialog*/
 /*dialog parent div*/
-.dialog_div{position:relative;width:658px;height:390px}
+.dialog_div{position:relative;width:658px;height:390px; left:-100px !important;}
 /*dialog close img*/
 .dialog_s2{
     position:absolute;
