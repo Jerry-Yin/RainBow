@@ -62,8 +62,8 @@ li {
 }
 
 #logo {
-    width: 76px;
-    height: 48px;
+    width: 88px;
+    height: 50px;
     /*background-color: rebeccapurple;*/
     margin: 0 auto;
 }
@@ -191,10 +191,10 @@ a:active {
     padding-bottom: 20%;
 }
 
-/*.div_banner:hover ~ .btn_shift{*/
-    /*visibility: visible;*/
+#section1:hover > .btn_shift{
+    visibility: visible;
 
-/*}*/
+}
 
 /*关于我们*/
 #section2 {
