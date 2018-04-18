@@ -30,6 +30,11 @@ var bannerJson = [{
     }
 ];
 
+var imgIndex0 = "src/image/img_index_0.png";
+var imgIndex1 = "src/image/img_index_1.png";
+
+var mCurrentIndex = 2;
+
 /********** 函数 **********/
 
 /**
@@ -45,8 +50,24 @@ function interval() {
         //点击事件
         // window.open(this.getAttribute("desUrl"));
     }
-
     bannerIndex++;
+
+    var index1 = document.getElementById("img_index1");
+    var index2 = document.getElementById("img_index2");
+    var join = document.getElementById("img_join");
+    console.log("index: "+ mCurrentIndex);
+    if (mCurrentIndex === 1){
+        index1.src = imgIndex0;
+        index2.src = imgIndex1;
+        mCurrentIndex = 2;
+        join.style.visibility = "hidden";
+    }else {
+        index1.src = imgIndex1;
+        index2.src = imgIndex0;
+        mCurrentIndex = 1;
+        join.style.visibility = "visible";
+    }
+
 }
 
 /**

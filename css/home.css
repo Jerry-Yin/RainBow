@@ -177,6 +177,24 @@ a:active {
     top: 0;;
 }
 
+.banner_index{
+    /*margin-top: 80%;*/
+    position: absolute;
+    top: 90%;
+    left: 48%;
+}
+
+.banner_index img{
+    width: 10px;
+    height: 10px;
+}
+
+.img_index1{
+}
+
+.img_index2{
+    margin-left: 30px;
+}
 
 
 /*首页*/
@@ -287,6 +305,14 @@ a:active {
     top:80% !important;
     left:25%;
     cursor: pointer;
+}
+
+.img_know_more{
+    /*height: 50px;*/
+    /*width: 100px;*/
+    /*position: relative;*/
+    /*left: 50%;*/
+    /*top: 50%;*/
 }
 
 /*Dialog*/

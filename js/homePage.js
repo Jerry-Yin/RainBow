@@ -9,7 +9,7 @@ function scanCode() {
         content:
         '<div class="dialog_div">' +
             '<img class="dialog_s1" src="src/image/img_scan_code.png">' +
-            '<img class="dialog_s2" id="btn_dismiss1" src="src/image/img_close_black.png" onclick="dismissDialog()"></img>' +
+            '<img class="dialog_s2" id="btn_dismiss1" src="src/image/img_close_black.png" onclick="dismissDialog()" style="margin-top: 5px; margin-right: 5px;"></img>' +
         '</div>',
         lock: true,
         width:500,
@@ -51,7 +51,7 @@ function showJoinDialog() {
         content:
         '<div class="dialog_div">' +
         '<img class="dialog_s1" src="src/image/img_join_dialog.png">' +
-        '<img class="dialog_s2" id="btn_dismiss1" src="src/image/img_close_black.png" onclick="dismissJoinDialog()"></img>' +
+        '<img class="dialog_s2" id="btn_dismiss1" src="src/image/img_close_black.png" onclick="dismissJoinDialog()" style="margin-top: 5px; margin-right: 5px;"></img>' +
         '</div>',
         lock: true,
         width:500,
@@ -61,6 +61,7 @@ function showJoinDialog() {
         opacity:0.4,
         drag: true
     });
+
 }
 
 function dismissJoinDialog() {
@@ -69,4 +70,8 @@ function dismissJoinDialog() {
         title: false
         // content:'<img src="src/image/img_scan_code.png">'
     }).hide();
+}
+
+function knowMore() {
+
 }

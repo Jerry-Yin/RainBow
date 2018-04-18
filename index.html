@@ -3,14 +3,15 @@
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
-    <meta http-equiv="Content-Language" Content="zh-CN" />
+    <meta http-equiv="Content-Language" Content="zh-CN"/>
 
-    <meta name="baidu-site-verification" content="a2xO8ISsmg" />
-    <meta name="baidu-site-verification" content="mDuGKtT2K1" />
+    <meta name="baidu-site-verification" content="a2xO8ISsmg"/>
+    <meta name="baidu-site-verification" content="mDuGKtT2K1"/>
 
     <title>彩虹道</title>
-    <meta name="keywords" content="跆拳道体育、招生、彩虹道" />
-    <meta name="description" content="彩虹道体育——为少儿体育创业者加速。彩虹道体育拥有最强的招生团队、独家的特色教程、专业的教练资源、多元的盈利创收为商家提供各种深入门店的一流运营服务，带来更多价值。" />
+    <meta name="keywords" content="跆拳道体育、招生、彩虹道"/>
+    <meta name="description"
+          content="彩虹道体育——为少儿体育创业者加速。彩虹道体育拥有最强的招生团队、独家的特色教程、专业的教练资源、多元的盈利创收为商家提供各种深入门店的一流运营服务，带来更多价值。"/>
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -47,7 +48,7 @@
         <div>
             <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="navbar-nav">
-                    <li><img id="logo" src="src/image/img_logo2.png"></li>
+                    <li><img id="logo" src="src/image/img_logo.png"></li>
                     <li style="padding-top: 10px"><a class="nav_btn" href="#">首页</a></li>
                     <!--<li>-->
                     <!--<div class="nav_txt">-->
@@ -82,18 +83,27 @@
     <!--<li><img src="src/image/img_banner2.png" alt=""/></li>-->
     <!--</ul>-->
     <!--</p>-->
-
-    <img class="div_banner" onmouseover="bannerOver()" onmouseout="bannerOut()">
-    <button class="btn_shift" name="btn_shift" id="btn_shift1" onclick="clickPrev()">&lt;</button>
+    <!--<img class="div_banner" onmouseover="bannerOver()" onmouseout="bannerOut()">-->
+    <img class="div_banner">
+    <!--<button class="btn_shift" name="btn_shift" id="btn_shift1" onclick="clickPrev()">&lt;</button>-->
     <img class="img_banner" id="banner" src="src/image/img_banner1.png">
-    <button class="btn_shift" name="btn_shift" id="btn_shift2" onclick="clickNext()">&gt;</button>
-    <img class="img_join" src="src/image/img_join.png" onclick="showJoinDialog()">
+    <!--<button class="btn_shift" name="btn_shift" id="btn_shift2" onclick="clickNext()">&gt;</button>-->
+    
+    <div class="banner_index">
+        <img class="img_index1" id="img_index1" src="src/image/img_index_1.png">
+        <img class="img_index2" id="img_index2" src="src/image/img_index_0.png">
+    </div>
+    <!--<img class="img_join" src="src/image/img_join.png" onclick="showJoinDialog()">-->
+    <!--<div href="#section9">-->
+        <img class="img_join" id="img_join" src="src/image/img_join.png" onclick="location.href='#section9'">
+    <!--</div>-->
 </div>
 
 </div>
 <!--关于我们-->
 <div id="section2" class="container-fluid">
-    <img src="src/image/img_home_page1.png">
+    <img class="img_selection2" src="src/image/img_home_page1.png">
+    <img class="img_know_more" src="src/image/img_know_more.png" style="height: auto; width: auto; margin: 0 auto" onclick="showJoinDialog()" >
 </div>
 <div id="section3" class="container-fluid">
     <img src="src/image/img_home_page2.png">
