@@ -48,7 +48,7 @@
         <div>
             <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="navbar-nav">
-                    <li><img id="logo" src="src/image/img_logo.png"></li>
+                    <li><img id="logo" src="src/image/img_logo_c.png"></li>
                     <li style="padding-top: 10px"><a class="nav_btn" href="#">首页</a></li>
                     <!--<li>-->
                     <!--<div class="nav_txt">-->
@@ -88,14 +88,14 @@
     <!--<button class="btn_shift" name="btn_shift" id="btn_shift1" onclick="clickPrev()">&lt;</button>-->
     <img class="img_banner" id="banner" src="src/image/img_banner1.png">
     <!--<button class="btn_shift" name="btn_shift" id="btn_shift2" onclick="clickNext()">&gt;</button>-->
-    
+
     <div class="banner_index">
         <img class="img_index1" id="img_index1" src="src/image/img_index_1.png">
         <img class="img_index2" id="img_index2" src="src/image/img_index_0.png">
     </div>
     <!--<img class="img_join" src="src/image/img_join.png" onclick="showJoinDialog()">-->
     <!--<div href="#section9">-->
-        <img class="img_join" id="img_join" src="src/image/img_join.png" onclick="location.href='#section9'">
+    <img class="img_join" id="img_join" src="src/image/img_join.png" onclick="location.href='#section9'">
     <!--</div>-->
 </div>
 
@@ -103,7 +103,8 @@
 <!--关于我们-->
 <div id="section2" class="container-fluid">
     <img class="img_selection2" src="src/image/img_home_page1.png">
-    <img class="img_know_more" src="src/image/img_know_more.png" style="height: auto; width: auto; margin: 0 auto" onclick="showJoinDialog()" >
+    <img class="img_know_more" src="src/image/img_know_more.png" style="height: auto; width: auto; margin: 0 auto"
+         onclick="showJoinDialog()">
 </div>
 <div id="section3" class="container-fluid">
     <img src="src/image/img_home_page2.png">
@@ -143,3 +144,31 @@
 <!--});-->
 <!--</script>-->
 </html>
+
+
+<script type="text/javascript">
+    <!--监听屏幕滚动事件-->
+    window.onscroll = function () {
+        var scrollTop = 0;  //滚动高度
+        if (document.documentElement && document.documentElement.scrollTop) {
+            scrollTop = document.documentElement.scrollTop;
+        }
+        else if (document.body) {
+            scrollTop = document.body.scrollTop;
+        }
+//        console.log("scrollTop: " + scrollTop)
+
+        var navigate = document.getElementById("navigate");
+        var logo = document.getElementById("logo");
+        if (scrollTop >= 450){
+            navigate.style.backgroundColor = "white";
+            navigate.style.opacity = 0.9;
+            logo.src = "src/image/img_logo_c.png";
+        }else if (scrollTop < 450){
+            navigate.style.backgroundColor = "transparent";
+            navigate.style.opacity = 1;
+            logo.src = "src/image/img_logo.png";
+        }
+    }
+
+</script>
