@@ -17,7 +17,7 @@
 #navigate_root {
     background-color: transparent;
     /*background-color: darkgrey;*/
-    font-size: 20px;
+    /*font-size: 16px;*/
     margin: 10px;
 }
 
@@ -33,8 +33,10 @@
 
 /*div*/
 #myNavbar {
+    display: flex;
+    justify-content: space-between;
     /*width: 100%;*/
-    text-align: center;
+    /*text-align: center;*/
     /*background-color: rgba(255,35,142,0.3);*/
     /*display: flex;*/
     /*justify-content: center;*/
@@ -42,13 +44,14 @@
 
 /*ul*/
 .navbar-nav {
-    width: 60%;
+    width: 50%;
+    height: 80px;
     text-align: center;
     /*background-color: rgba(194,237,245,0.18);*/
-    margin: 5px;
     /*margin-left: 15%;*/
-    margin-left: 20%;
-    margin-right: 20%;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: -45px;
 }
 
 li {
@@ -58,8 +61,17 @@ li {
     margin: 0 2px;
     /*background-color: yellowgreen;*/
     text-align: center;
+    /*list-style: none;*/
     /*padding-top: 10px;*/
     /*background-color: aqua;*/
+}
+
+/*li:hover {*/
+/*!*border-bottom: 1.5px solid #f5cf1f;*!*/
+/*}*/
+
+li > a:hover {
+    color: #f5cf1f !important;
 }
 
 #logo {
@@ -67,36 +79,47 @@ li {
     height: 50px;
     /*background-color: rebeccapurple;*/
     margin: 0 auto;
+    margin-left: 25px !important;
 }
 
 .nav_btn {
     /*background-color: darkgrey;*/
     width: 100%;
     height: auto;
-    /*background-color: transparent;*/
+    text-decoration: none;
+    font-size: 16px;
+    color: rebeccapurple;
 }
 
-#follow {
+.follow {
     height: auto;
     width: 100px;
-    /*background-color: yellowgreen;*/
-    /*margin: 10px auto;*/
-    /*margin-left: 100px;*/
-    /*display: inline;*/
-    /*float: right;*/
-
     margin: 10px;
+    margin-top: 20px;
     margin-left: 85%;
     /*width: auto;*/
     position: absolute;
     top: 0;
+    /*margin-left: 20px !important;*/
+}
+
+.follow:hover {
+    content: url("../src/image/img_follow_c.png");
+}
+
+/*text*/
+.navbar-inverse .navbar-nav>li>a {
+    color: white;
+}
+
+.navbar-nav a {
+    text-decoration: none;
 }
 
 .navbar-nav.a:hover {
     color: yellow;
     /*background-color: transparent;*/
     border: transparent;
-    text-decoration: none;
 }
 
 a:active {
@@ -155,13 +178,13 @@ a:active {
 }
 
 #btn_shift1 {
-    position:absolute;
-    left:100px;
+    position: absolute;
+    left: 100px;
 }
 
 #btn_shift2 {
-    position:absolute;
-    right:100px;
+    position: absolute;
+    right: 100px;
 }
 
 .btn_shift:hover {
@@ -178,25 +201,24 @@ a:active {
     top: 0;;
 }
 
-.banner_index{
+.banner_index {
     /*margin-top: 80%;*/
     position: absolute;
     top: 90%;
     left: 48%;
 }
 
-.banner_index img{
+.banner_index img {
     width: 10px;
     height: 10px;
 }
 
-.img_index1{
+.img_index1 {
 }
 
-.img_index2{
+.img_index2 {
     margin-left: 30px;
 }
-
 
 /*首页*/
 #section1 {
@@ -210,7 +232,7 @@ a:active {
     padding-bottom: 20%;
 }
 
-#section1:hover > .btn_shift{
+#section1:hover > .btn_shift {
     visibility: visible;
 
 }
@@ -225,6 +247,29 @@ a:active {
 
     padding-top: 40%;
     /*padding-bottom: 20%;*/
+}
+
+#section2 #section2_img {
+    width: 300px;
+    height: 80px;
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+}
+
+#section2 #section2_img img {
+    width: 300px;
+    height: 120px;
+    cursor: pointer;
+}
+
+#section2 #section2_img img:hover {
+    width: 300px;
+    height: 120px;
+    content: url("../src/image/img_know_more_line.png");
 }
 
 #section3 {
@@ -301,14 +346,14 @@ a:active {
     padding-top: 25%;
 }
 
-.img_join{
+.img_join {
     width: 10% !important;
-    top:80% !important;
-    left:25%;
+    top: 80% !important;
+    left: 25%;
     cursor: pointer;
 }
 
-.img_know_more{
+.img_know_more {
     /*height: 50px;*/
     /*width: 100px;*/
     /*position: relative;*/
@@ -318,15 +363,27 @@ a:active {
 
 /*Dialog*/
 /*dialog parent div*/
-.dialog_div{position:relative;width:658px;height:390px; left:-100px !important;}
+.dialog_div {
+    position: relative;
+    width: 658px;
+    height: 390px;
+    left: -100px !important;
+}
+
 /*dialog close img*/
-.dialog_s2{
-    position:absolute;
-    z-index:100;
-    width:50px;
-    height:50px;
+.dialog_s2 {
+    position: absolute;
+    z-index: 100;
+    width: 50px;
+    height: 50px;
     margin-left: 92%;
     cursor: pointer;
 }
+
 /*dialog main img */
-.dialog_s1{ position:absolute;z-index:80;width:100%;height:100%}
+.dialog_s1 {
+    position: absolute;
+    z-index: 80;
+    width: 100%;
+    height: 100%
+}

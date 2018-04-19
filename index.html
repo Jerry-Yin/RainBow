@@ -8,7 +8,7 @@
     <meta name="baidu-site-verification" content="a2xO8ISsmg"/>
     <meta name="baidu-site-verification" content="mDuGKtT2K1"/>
 
-    <title>彩虹道</title>
+    <title>彩虹道体育——为少儿体育创业者加速</title>
     <meta name="keywords" content="跆拳道体育、招生、彩虹道"/>
     <meta name="description"
           content="彩虹道体育——为少儿体育创业者加速。彩虹道体育拥有最强的招生团队、独家的特色教程、专业的教练资源、多元的盈利创收为商家提供各种深入门店的一流运营服务，带来更多价值。"/>
@@ -34,9 +34,9 @@
 
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
 
-<nav id="navigate" class="navbar navbar-inverse navbar-fixed-top">
+<nav id="navigate" class="navbar navbar-inverse navbar-fixed-top" style="height: 88px">
 
-    <div id="navigate_root" class="container-fluid">
+    <div id="navigate_root" class="" container-fluid>
         <!--<div class="navbar-header">-->
         <!--<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">-->
         <!--<span class="icon-bar"></span>-->
@@ -45,34 +45,33 @@
         <!--</button>-->
         <!--&lt;!&ndash;<a class="navbar-brand" href="#">首页</a>&ndash;&gt;-->
         <!--</div>-->
-        <div>
-            <div class="collapse navbar-collapse" id="myNavbar">
-                <ul class="navbar-nav">
-                    <li><img id="logo" src="src/image/img_logo_c.png"></li>
-                    <li style="padding-top: 10px"><a class="nav_btn" href="#">首页</a></li>
-                    <!--<li>-->
-                    <!--<div class="nav_txt">-->
-                    <!--<a href="#section2">关于我们</a>-->
-                    <!--</div>-->
-                    <!--</li>-->
-                    <li style="padding-top: 10px"><a class="nav_btn" href="#section2">关于我们</a></li>
-                    <li style="padding-top: 10px"><a class="nav_btn" href="#section7">经典案例</a></li>
-                    <li style="padding-top: 10px"><a class="nav_btn" href="#section8">合作伙伴</a></li>
-                    <li style="padding-top: 10px"><a class="nav_btn" href="#section9">联系我们</a></li>
-                    <!--下拉菜单-->
-                    <!--<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">下拉菜单 <span-->
-                    <!--class="caret"></span></a>-->
-                    <!--<ul class="dropdown-menu">-->
-                    <!--<li><a href="#section51">small tom1</a></li>-->
-                    <!--<li><a href="#section52">small tom2</a></li>-->
-                    <!--</ul>-->
-                    <!--</li>-->
-                </ul>
-            </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <img id="logo" src="src/image/img_logo.png">
+            <ul class="navbar-nav">
+                <li style="padding-top: 10px"><a class="nav_btn" href="#">首页</a></li>
+                <!--<li>-->
+                <!--<div class="nav_txt">-->
+                <!--<a href="#section2">关于我们</a>-->
+                <!--</div>-->
+                <!--</li>-->
+                <li style="padding-top: 10px"><a class="nav_btn" href="#section2">关于我们</a></li>
+                <li style="padding-top: 10px"><a class="nav_btn" href="#section7">经典案例</a></li>
+                <li style="padding-top: 10px"><a class="nav_btn" href="#section8">合作伙伴</a></li>
+                <li style="padding-top: 10px"><a class="nav_btn" href="#section9">联系我们</a></li>
+                <!--下拉菜单-->
+                <!--<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">下拉菜单 <span-->
+                <!--class="caret"></span></a>-->
+                <!--<ul class="dropdown-menu">-->
+                <!--<li><a href="#section51">small tom1</a></li>-->
+                <!--<li><a href="#section52">small tom2</a></li>-->
+                <!--</ul>-->
+                <!--</li>-->
+            </ul>
         </div>
-        <img id="follow" src="src/image/img_follow_us.png" style="cursor: pointer;" onclick="scanCode()">
+        <img id="follow" class="follow" src="src/image/img_follow.png" style="cursor: pointer;" onclick="scanCode()">
     </div>
 </nav>
+
 
 <!--首页-->
 <div id="section1" class="container-fluid">
@@ -103,8 +102,10 @@
 <!--关于我们-->
 <div id="section2" class="container-fluid">
     <img class="img_selection2" src="src/image/img_home_page1.png">
-    <img class="img_know_more" src="src/image/img_know_more.png" style="height: auto; width: auto; margin: 0 auto"
-         onclick="showJoinDialog()">
+    <div id="section2_img">
+        <img class="img_know_more" src="src/image/img_know_more.png"
+             onclick="showJoinDialog()">
+    </div>
 </div>
 <div id="section3" class="container-fluid">
     <img src="src/image/img_home_page2.png">
@@ -160,14 +161,23 @@
 
         var navigate = document.getElementById("navigate");
         var logo = document.getElementById("logo");
-        if (scrollTop >= 450){
+        var textArr = document.getElementsByClassName("nav_btn");
+        if (scrollTop >= 450) {
             navigate.style.backgroundColor = "white";
             navigate.style.opacity = 0.9;
             logo.src = "src/image/img_logo_c.png";
-        }else if (scrollTop < 450){
+            for(var i=0,len=textArr.length;i<len;i++)
+            {
+                textArr[i].style.color = "black";
+            }
+        } else if (scrollTop < 450) {
             navigate.style.backgroundColor = "transparent";
             navigate.style.opacity = 1;
             logo.src = "src/image/img_logo.png";
+            for(var i=0,len=textArr.length;i<len;i++)
+            {
+                textArr[i].style.color = "white";
+            }
         }
     }
 
