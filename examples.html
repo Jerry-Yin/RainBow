@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<!--水平滚动-->
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <meta http-equiv="Content-Language" Content="zh-CN"/>
+
+    <title>彩虹道体育——为少儿体育创业者加速</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!--<style type="text/css">-->
+    <!--/* null style */-->
+    <!--@import "";-->
+    <!--</style>-->
+    <link rel="stylesheet" type="text/css" href="css/home.css">
+    <!--banner-->
+    <script src="js/home_banner.js"></script>
+    <script src="js/homePage.js"></script>
+    <!--Dialog-->
+    <script src="lib/js/jquery-1.8.3.min.js"></script>
+    <script src="lib/js/jquery.iDialog.js" dialog-theme="default"></script>
+
+</head>
+
+
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+
+<nav id="navigate" class="navbar navbar-inverse navbar-fixed-top" style="height: 88px; background-color: #f5d12a; ">
+
+    <div id="navigate_root" class="" container-fluid>
+        <!--<div class="navbar-header">-->
+        <!--<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">-->
+        <!--<span class="icon-bar"></span>-->
+        <!--<span class="icon-bar"></span>-->
+        <!--<span class="icon-bar"></span>-->
+        <!--</button>-->
+        <!--&lt;!&ndash;<a class="navbar-brand" href="#">首页</a>&ndash;&gt;-->
+        <!--</div>-->
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <img id="logo" src="src/image/img_logo_black.png">
+            <ul class="navbar-nav">
+                <li style="padding-top: 10px"><a class="nav_btn_p2" href="index.html#" style="color: black">首页</a></li>
+                <!--<li>-->
+                <!--<div class="nav_txt">-->
+                <!--<a href="#section2">关于我们</a>-->
+                <!--</div>-->
+                <!--</li>-->
+                <li style="padding-top: 10px"><a class="nav_btn_p2" href="index.html#section2" style="color: black">关于我们</a></li>
+                <li style="padding-top: 10px"><a class="nav_btn_p2" href="index.html#section7" style="color: black">经典案例</a></li>
+                <li style="padding-top: 10px"><a class="nav_btn_p2" href="index.html#section8" style="color: black">合作伙伴</a></li>
+                <li style="padding-top: 10px"><a class="nav_btn_p2" href="index.html#section9" style="color: black">联系我们</a></li>
+                <!--下拉菜单-->
+                <!--<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">下拉菜单 <span-->
+                <!--class="caret"></span></a>-->
+                <!--<ul class="dropdown-menu">-->
+                <!--<li><a href="#section51">small tom1</a></li>-->
+                <!--<li><a href="#section52">small tom2</a></li>-->
+                <!--</ul>-->
+                <!--</li>-->
+            </ul>
+        </div>
+        <img id="follow" class="follow" src="src/image/img_follow_black.png" style="cursor: pointer;" onclick="scanCode()">
+    </div>
+</nav>
+
+
+
+<div id="example_main">
+    <div class="text_index">
+        <p>彩虹道首页 > 经典案例</p>
+    </div>
+    <img class="example_img" src="src/image/img_example_more.png">
+</div>
+
+<!--联系我们-->
+<div id="section9" class="container-fluid">
+    <img src="src/image/img_home_foot.png">
+</div>
+
+</body>
+
+</html>
+
+
+<script type="text/javascript">
+    <!--监听屏幕滚动事件-->
+    window.onscroll = function () {
+        var scrollTop = 0;  //滚动高度
+        if (document.documentElement && document.documentElement.scrollTop) {
+            scrollTop = document.documentElement.scrollTop;
+        }
+        else if (document.body) {
+            scrollTop = document.body.scrollTop;
+        }
+
+        var navigate = document.getElementById("navigate");
+        var logo = document.getElementById("logo");
+        var textArr = document.getElementsByClassName("nav_btn");
+        if (scrollTop >= 180) {
+            navigate.style.opacity = 0.9;
+            for(var i=0,len=textArr.length;i<len;i++)
+            {
+                textArr[i].style.color = "black";
+            }
+        } else if (scrollTop < 450) {
+            navigate.style.opacity = 1;
+            for(var i=0,len=textArr.length;i<len;i++)
+            {
+                textArr[i].style.color = "white";
+            }
+        }
+    }
+
+</script>
