@@ -324,6 +324,19 @@ a:active {
     padding-top: 50%;
 }
 
+#section7 #section7_img {
+    width: 300px;
+    height: 80px;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    cursor: pointer;
+
+}
+
 /*合作伙伴*/
 #section8 {
     /*padding-top: 50px;*/
@@ -410,3 +423,4 @@ a:active {
     margin-left: 10%;
     margin-right: 10%;
 }
+

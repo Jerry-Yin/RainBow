@@ -8,7 +8,7 @@ function scanCode() {
         // content:'<img src="src/image/img_scan_code.png">',
         content:
         '<div class="dialog_div">' +
-            '<img class="dialog_s1" src="/src/image/img_scan_code.png">' +
+            '<img class="dialog_s1" src="src/image/img_scan_code.png">' +
             '<img class="dialog_s2" id="btn_dismiss1" src="src/image/img_close_black.png" onclick="dismissDialog()" style="margin-top: 5px; margin-right: 5px;"></img>' +
         '</div>',
         lock: true,
